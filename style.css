@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    border: 2px solid blue;
+}
+
+.maincont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 60%;
+    gap: 5%;
+}
+
+section {
+    height: 100%;
+    width: 50%;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+
+P {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#h1 {
+    color: whitesmoke;
+    background: linear-gradient(120deg, yellow, red);
+}
+
+#h2 {
+    color: whitesmoke;
+    background-image: linear-gradient(120deg, rgb(228, 183, 183), rgb(17, 51, 163));
+}
+
+#h3 {
+    color: whitesmoke;
+    background-image: linear-gradient(120deg, rgb(229, 184, 184), rgb(34, 186, 141));
+}
+
+main {
+    margin-top: 15px;
+    font-size: 3em;
+}
+
+hr {
+    color: red;
+    margin-top: 0;
+    border: 2px solid rgb(255, 255, 255);
+    width: 15vw;
+}
+
+.underprice {
+    color: rgb(215, 199, 199);
+    margin-top: 0;
+    border: 2px solid rgb(138, 138, 138);
+    width: 10vw;
+    margin-bottom: 0;
+}
+
+.lidiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+ul>li {
+    margin-top: 0;
+    text-align: left;
+    font-size: 1em;
+    padding: 0;
+    line-height: 40px;
+}
+
+button {
+    margin-top: 15px;
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: solid rgb(0, 255, 51);
+    border-width: 0 0 3px 0;
+}
+
+#btn1 {
+    color: whitesmoke;
+    background-image: linear-gradient(yellow, red);
+}
+
+#btn1:hover {
+    color: whitesmoke;
+    background-image: linear-gradient(yellow, red);
+    transform: translateY(-10px) scale(1.2);
+    transition: all ease-in-out 1s;
+    box-shadow: 0 1px 0 1px rgb(224, 150, 150);
+}
+
+#btn2 {
+    color: whitesmoke;
+    background-image: linear-gradient(rgb(0, 60, 255), rgb(225, 208, 208));
+}
+
+#btn2:hover {
+    color: whitesmoke;
+    background-image: linear-gradient(rgb(0, 60, 255), rgb(225, 208, 208));
+    transform: translateY(-10px) scale(1.2);
+    transition: all ease-in-out 1s;
+    box-shadow: 0 1px 0 1px rgb(173, 163, 236);
+}
+
+#btn3 {
+    color: whitesmoke;
+    background-image: linear-gradient(rgb(34, 186, 141), rgb(212, 185, 185));
+}
+
+#btn3:hover {
+    color: whitesmoke;
+    background-image: linear-gradient(rgb(34, 186, 141), rgb(212, 185, 185));
+    transform: translateY(-10px) scale(1.2);
+    transition: all ease-in-out 1s;
+    box-shadow: 0 1px 0 1px rgb(159, 245, 219);
+}
+
+@media(max-width:500px) {
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 300vh;
+        flex-basis: 100vw;
+        border: 2px solid blue;
+        margin-top: 0;
+    }
+    .maincont {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: nowrap;
+        height: 100%;
+        width: 100vw;
+        gap: 10px;
+    }
+    section {
+        height: 100%;
+        width: 50%;
+        border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    P {
+        font-size: 0.8em;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    main {
+        margin-top: 25px;
+        font-size: 2em;
+    }
+    ul>li {
+        margin-top: 10px;
+        text-align: left;
+        font-size: 1em;
+        padding: 0;
+        line-height: 50px;
+    }
+}
